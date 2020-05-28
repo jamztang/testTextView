@@ -15,6 +15,7 @@
 		1A46E7A4247E275400F16A3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A46E7A2247E275400F16A3F /* LaunchScreen.storyboard */; };
 		1A46E7AF247E275400F16A3F /* testTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A46E7AE247E275400F16A3F /* testTextViewTests.swift */; };
 		1A46E7BA247E275400F16A3F /* testTextViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A46E7B9247E275400F16A3F /* testTextViewUITests.swift */; };
+		1A46E7C8247E277A00F16A3F /* NoFocusRingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A46E7C7247E277A00F16A3F /* NoFocusRingTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		1A46E7B5247E275400F16A3F /* testTextViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testTextViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A46E7B9247E275400F16A3F /* testTextViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testTextViewUITests.swift; sourceTree = "<group>"; };
 		1A46E7BB247E275400F16A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A46E7C7247E277A00F16A3F /* NoFocusRingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoFocusRingTextView.swift; sourceTree = "<group>"; };
+		1A46E7C9247E27AB00F16A3F /* testTextView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testTextView.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +102,11 @@
 		1A46E796247E275300F16A3F /* testTextView */ = {
 			isa = PBXGroup;
 			children = (
+				1A46E7C9247E27AB00F16A3F /* testTextView.entitlements */,
 				1A46E797247E275300F16A3F /* AppDelegate.swift */,
 				1A46E799247E275300F16A3F /* SceneDelegate.swift */,
 				1A46E79B247E275300F16A3F /* ViewController.swift */,
+				1A46E7C7247E277A00F16A3F /* NoFocusRingTextView.swift */,
 				1A46E79D247E275300F16A3F /* Main.storyboard */,
 				1A46E7A0247E275400F16A3F /* Assets.xcassets */,
 				1A46E7A2247E275400F16A3F /* LaunchScreen.storyboard */,
@@ -260,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A46E79C247E275300F16A3F /* ViewController.swift in Sources */,
+				1A46E7C8247E277A00F16A3F /* NoFocusRingTextView.swift in Sources */,
 				1A46E798247E275300F16A3F /* AppDelegate.swift in Sources */,
 				1A46E79A247E275300F16A3F /* SceneDelegate.swift in Sources */,
 			);
@@ -434,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = testTextView/testTextView.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5BVQ8XRL4;
 				INFOPLIST_FILE = testTextView/Info.plist;
@@ -443,6 +450,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.goodnotes.testTextView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = testTextView/testTextView.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5BVQ8XRL4;
 				INFOPLIST_FILE = testTextView/Info.plist;
@@ -461,6 +470,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.goodnotes.testTextView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
